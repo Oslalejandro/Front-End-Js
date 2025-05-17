@@ -1,0 +1,746 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: 1px solid #eee;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  }
+  
+  .logo {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 32px;
+    margin-left: 60px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 12px;
+    position: relative;
+    padding-bottom: 2px;
+    transition: all 0.2s ease;
+  }
+  
+  .nav-links a:hover::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: #000;
+    left: 0;
+    bottom: 0;
+  }
+  
+  .nav-links .sale {
+    color: red;
+  }
+  
+  .nav-icons {
+    display: flex;
+    gap: 24px;
+    margin-left: 525px; /* separación íconos */
+  }
+  
+  .icon {
+    width: 20px;
+    height: 20px;
+    color: #000;
+    cursor: pointer;
+    transition: color 0.2s ease;
+  }
+  
+  .icon:hover {
+    color: #888;
+  }
+  
+body {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .asesoramiento-section {
+    position: relative;
+    width: 100%;
+    height: 982px;
+    background-image: url('fondo.jpg'); /* Reemplazá con tu imagen */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 60px 140px;
+  }
+  
+  .contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+  }
+  
+  .intro-text {
+    font-size: 20px;
+    color: #fff;
+    max-width: 400px;
+    text-align: right;
+  }
+  
+  .cta {
+    padding: 12px 20px;
+    background-color: #fff;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .cta:hover {
+    background-color: #3E5C76;
+    color: #fff;
+  }
+  
+  .section-container {
+    position: relative;
+    width: 100%;
+    height: 982px;
+    background: url('ruta-de-tu-imagen.jpg') no-repeat center/cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 40px 140px;
+    box-sizing: border-box;
+    padding-bottom: 140px;
+  }
+  
+  .content-box {
+    max-width: 400px;
+    margin-right: 40px;
+    text-align: right;
+  }
+  
+  .content-box p {
+    font-family: 'Helvetica Neue', sans-serif; /* o la que estés usando */
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 16px;
+  }
+  
+  .cta-button {
+    background-color: transparent;
+    border: 2px solid #000;
+    color: #000;
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #3E5C76;
+    color: #fff;
+    border-color: #3E5C76;
+  }
+  
+ .section-container {
+  font-family: 'Inter', sans-serif;
+  position: relative;
+  width: 100%;
+  height: 982px;
+  background: url(img/01.png) no-repeat center/cover;
+  padding: 40px 140px;
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.fixed-content {
+  position: absolute;
+  top: 300px;
+  right: 140px;
+  text-align: right;
+  max-width: 400px;
+  z-index: 10;
+
+}
+
+.fixed-content p {
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.cta-button {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(6px);
+  color: #ffffff;
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight:normal;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-color:rgba(255, 255, 255, 0.05);
+}
+
+.cta-button:hover {
+  background-color: #3E5C76;
+  color: #fff;
+  border-color: #3E5C76;
+}
+
+.cards-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 160px;
+  justify-content: flex-end;
+  margin-bottom: 100px;
+}
+
+.card {
+  width: 242px;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(6px);
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  border-radius: 0;
+  padding: 16px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  transition: background-color 0.3s ease;
+}
+
+.card .card-front {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  text-align:left;
+  z-index: 2;
+}
+
+.card .card-back {
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+  padding: 16px;
+  font-size: 12px;
+  color: #fff;
+  text-align:center;
+  line-height: 1.4;
+  pointer-events: none;
+}
+
+.inspiran{
+  position: absolute;
+  text-align: center;
+  margin-right: 500px;
+  
+}
+
+.inspiran-text{
+  font-style:inherit;
+  font-size: 80px;
+  color: #ffffff;
+}
+
+.card:hover .card-back {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: all;
+}
+
+.card1:hover {
+  background-color: #3E5C76;
+}
+
+.card2:hover {
+  background-color: #7B9EAE;
+}
+
+.card3:hover {
+  background-color: #A8BCA0;
+}
+
+
+
+SIGUIENTE SECCION 
+
+
+.productos {
+  width: 100%;
+  padding: 4rem 2rem;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+.texto-categorias {
+  max-width: 800px;
+  margin: 70px 0;
+}
+
+.texto-categorias p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #333;
+  line-height: 1.6;
+  text-align: left;
+  margin-left: 40px;
+}
+
+.grid-productos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  justify-items: center;
+  margin: 40px 40px;
+}
+
+.producto {
+  width: 355px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+
+
+.etiqueta {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 0.5rem;
+  font-weight: bold;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  color: #333;
+}
+
+
+
+
+/* Contenedor de imagen con posición relativa */
+.img-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0;
+}
+
+/* Imagen base */
+.img-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* Capa de overlay con blur y fondo semitransparente */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px); /* soporte Safari */
+  background-color: rgba(0, 0, 0, 0.3); /* oscurece */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 0;
+  z-index: 2;
+}
+
+/* Efecto hover */
+.img-container:hover .overlay {
+  opacity: 1;
+}
+
+.img-container:hover img {
+  transform: scale(1.05);
+}
+
+.etiqueta .numero {
+  transition: none;
+}
+
+.etiqueta .categoria {
+  transition: all 0.6s ease;
+  text-align: right;
+}
+
+/* Al hacer hover, movemos la palabra al centro horizontalmente */
+.producto:hover .categoria {
+  transform: translateX(-100%);
+  margin-left: 50%;
+}
+ 
+
+
+.banner {
+  width: 100%;
+  height: 60px;
+  background-color: rgb(0, 0, 0);
+  overflow: hidden;
+  position: relative;
+}
+.carrusel {
+  display: flex;
+  gap: 60px;
+  animation: slide 40s linear infinite;
+  align-items: center;
+  width: max-content; /* 👈 asegura que el ancho sea solo el del contenido */
+}
+
+.banner-texto {
+  text-align: center;
+  margin-top: 16px;
+  white-space: nowrap;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  flex-shrink: 0;
+  padding-left: 300px;
+}
+
+@keyframes slide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+
+
+
+.promociones-section {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 140px 140px;
+  background-color: #fff;
+}
+
+.promo-card {
+  width: 473px;
+  height: 851px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.promo-image-container {
+  position: relative;
+  width: 473px;
+  height: 700px;
+  overflow: hidden;
+}
+
+.promo-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.promo-image-container .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  transition: background-color 0.3s ease;
+}
+
+.promo-image-container:hover .overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.promo-text {
+  padding: 20px;
+  text-align: center;
+}
+
+.promo-text h3 {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.promo-text p {
+  margin-top: 30px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+}
+
+
+
+
+.banner2 {
+  width: 100%;
+  height: 90px;
+  background-color: rgb(255, 255, 255);
+}
+
+.carrusel2 {
+  align-items: center;
+}
+
+.banner-texto2 {
+  text-align: center;
+  margin-bottom: 20PX;
+  font-size: 90px;
+  color: rgb(0, 0, 0);
+}
+
+
+
+
+.room-inspiration {
+  background-color: #fff;
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.room-grid {
+  display: flex;
+  gap: 60px;
+  width: 1512px;
+}
+
+.left-column {
+  width: 726px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.text-block {
+  padding-right: 40px;
+  margin-top: 180px;
+margin-bottom: 50px;
+}
+
+.text-block p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.cta-button2 {
+  padding: 10px 24px;
+  border: 1px solid #000;
+  background-color: transparent;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.cta-button2:hover {
+  background-color: #3E5C76;
+  color: #ffffff;
+}
+
+.img-horizontal {
+  width: 726px;
+  height: 410px;
+  object-fit: cover;
+}
+
+.right-column {
+  width: 726px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.img-vertical {
+  width: 726px;
+  height: 820px;
+  object-fit: cover;
+}
+
+
+
+
+.shop-instagram {
+  padding: 100px 0;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.content-wrapper {
+  width: 1512px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-wrapper h2 {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.content-wrapper p {
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 353px);
+  grid-gap: 34px;
+  margin-bottom: 80px;
+}
+
+.insta-card {
+  position: relative;
+  width: 353px;
+  height: 349px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.insta-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: filter 0.3s ease;
+}
+
+.icon-hover {
+  background: rgba(255, 255, 255, 0.05);
+backdrop-filter: blur(6px);
+color: #000000;
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  padding: 6px;
+  transition: transform 0.3s ease;
+  border-color: #000;
+}
+
+.icon-hover span {
+  display: inline-block;
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+.insta-card:hover img {
+  filter: blur(2px);
+}
+
+.insta-card:hover .icon-hover span {
+  transform: rotate(45deg);
+}
+
+/* Reviews Section */
+.review-carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.review-carousel {
+  display: flex;
+  gap: 20px;
+  scroll-behavior: smooth;
+  overflow-x: auto;
+  padding: 10px 0;
+  scrollbar-width: none;
+}
+
+.review-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.review-card {
+  min-width: 300px;
+  background-color: #f7f7f7;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 6px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-btn:hover {
+  background-color: #eee;
+}
+
+.carousel-btn.left {
+  left: -30px;
+}
+
+.carousel-btn.right {
+  right: -30px;
+}
+
+
+
+
+
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .grid-productos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .texto-categorias {
+    margin: 50px 0;
+  }
+}
