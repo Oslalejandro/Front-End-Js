@@ -4,24 +4,33 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Navbar Binah con Heroicons</title>
-
-  <!-- Google Fonts: Inter -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
-
-  <!-- CSS -->
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
   <header class="navbar">
     <div class="logo">BINAH</div>
-
     <nav class="nav-links">
       <a href="#">PRODUCTOS</a>
       <a href="#">ESPACIOS INSPIRADORES</a>
       <a href="#">E-GIFT CARD</a>
       <a href="#" class="sale">SALE</a>
     </nav>
+    <div class="mega-menu" id="megaMenu">
+      <ul class="menu-categorias">
+        <li onmouseover="cambiarImagen('img1.jpg')">Cocina</li>
+        <li onmouseover="cambiarImagen('img2.jpg')">Living</li>
+        <li onmouseover="cambiarImagen('img3.jpg')">Dormitorio</li>
+        <li onmouseover="cambiarImagen('img4.jpg')">Baño</li>
+        <li onmouseover="cambiarImagen('img5.jpg')">Escritorio</li>
+        <li onmouseover="cambiarImagen('img6.jpg')">Exterior</li>
+        <li onmouseover="cambiarImagen('img7.jpg')">Deco</li>
+        <li onmouseover="cambiarImagen('img8.jpg')">Textiles</li>
+      </ul>
+      <div class="menu-imagen">
+        <img src="img1.jpg" alt="Preview" id="menuImagen">
+      </div>
+    </div>
     <div class="nav-icons">
       <!-- Buscar -->
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
@@ -38,39 +47,62 @@
         <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 8.25c0-3.375-2.625-6-6-6-1.875 0-3.563 1.125-4.5 2.625C10.313 3.375 8.625 2.25 6.75 2.25c-3.375 0-6 2.625-6 6 0 7.125 10.5 12.75 10.5 12.75S21.75 15.375 21.75 8.25z" />
       </svg>
 
-      <!-- Carrito -->
+      <!-- Carrito -->?
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
         <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.5l.813 4.065M6.75 14.25h10.5l4.5-9H5.31m1.44 9L7.5 19.5M16.5 19.5l.75-5.25m-6.75 5.25a.75.75 0 100-1.5.75.75 0 000 1.5zM15 19.5a.75.75 0 100-1.5.75.75 0 000 1.5z" />
       </svg>
     </div>
   </header>
-  <section class="section-container">
-    <div class="fixed-content">
-      <p>Descubrí nuevas formas de decorar tu hogar y aprovechá nuestras promociones exclusivas.</p>
-      <button class="cta-button">Descubrir tendencias</button>
-    </div>
-  
-    <div class="cards-container">
-      <div class="card card1">
-        <div class="card-front">Solicitar asesoramiento</div>
-        <div class="card-back">Te ayudamos a crear el espacio perfecto. ¡Asesoramiento personalizado para tu hogar!</div>
+
+
+  <!-- HTML: seccion de “Asesoramiento” con cards -->
+<section class="section-container">
+  <div class="fixed-content">
+    <p>Descubrí nuevas formas de decorar tu hogar y aprovechá nuestras promociones exclusivas.</p>
+    <button class="cta-button">Descubrir tendencias</button>
+  </div>
+
+  <div class="cards-container">
+    <div class="card card1">
+      <div class="card-front">
+        <span class="card-title">Solicitar asesoramiento</span>
+        <span class="card-icon">→</span>
       </div>
-  
-      <div class="card card2">
-        <div class="card-front">Ver ideas</div>
-        <div class="card-back">Inspiración para cada rincón. Pequeños espacios, cocinas, livings y más...</div>
-      </div>
-  
-      <div class="card card3">
-        <div class="card-front">Ver promociones</div>
-        <div class="card-back">Hasta 50% OFF en muebles y deco para renovar tu casa sin gastar de más.</div>
+      <div class="card-back">
+        Te ayudamos a crear el espacio perfecto.  
+        ¡Asesoramiento personalizado para tu hogar!
       </div>
     </div>
-      <div class="inspiran">
-        <div class="inspiran-text">Inspira. Conecta.</div>
+
+    <div class="card card2">
+      <div class="card-front">
+        <span class="card-title">Ver ideas</span>
+        <span class="card-icon">→</span>
       </div>
-    </section>
+      <div class="card-back">
+        Inspiración para cada rincón.  
+        Pequeños espacios, cocinas, livings y más...
+      </div>
+    </div>
+
+    <div class="card card3">
+      <div class="card-front">
+        <span class="card-title">Ver promociones</span>
+        <span class="card-icon">→</span>
+      </div>
+      <div class="card-back">
+        Hasta 50% OFF en muebles y deco  
+        para renovar tu casa sin gastar de más.
+      </div>
+    </div>
+  </div>
+
+  <div class="inspiran">
+    <div class="inspiran-text">Inspira. Conecta.</div>
+  </div>
+</section>
     
+
 
     <section class="productos">
         <div class="texto-categorias">
@@ -268,7 +300,7 @@
         <!-- REVIEWS GOOGLE -->
         <div class="google-reviews">
           <div class="review-header">
-            <img src="google-logo.png" alt="Google Logo" />
+            <img src="img/Captura de pantalla 2025-05-18 a la(s) 6.08.12 p. m..png" alt="Google Logo" />
             <div>
               <strong>binahdeco.com.ar</strong><br />
               <span>4.7 ★★★★★</span> <small>224 reseñas</small>
@@ -301,10 +333,74 @@
             <button class="carousel-btn right" onclick="scrollReviews(1)">→</button>
           </div>
         
-          <button class="review-cta">Dejá tu comentario ↗</button>
+          <button class="cta-button2">Deja tu comentario</button>
         </div>
-      </div>
     </section>
   </div>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h4>Contacto</h4>
+        <p>Nos apasiona la vida en casa</p>
+        <p>Te inspiramos a crear espacios cálidos y hacer de tu hogar tu lugar favorito.</p>
+        <a href="mailto:info@binahdeco.com.ar">info@binahdeco.com.ar</a>
+      </div>
+  
+      <div class="footer-column">
+        <h4>Nosotros</h4>
+        <ul>
+          <li><a href="#">Quiénes somos</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="#">Preguntas Frecuentes</a></li>
+          <li><a href="#">Términos y condiciones</a></li>
+          <li><a href="#">Política de devolución y reembolso</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-column">
+        <h4>Cuenta</h4>
+        <ul>
+          <li><a href="#">Mi cuenta</a></li>
+          <li><a href="#">Mis pedidos</a></li>
+          <li><a href="#">Mis direcciones</a></li>
+          <li><a href="#">Libro de Quejas Online</a></li>
+          <li><a href="#">Políticas de Privacidad</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-column">
+        <h4>Registrate para conocer todas las novedades</h4>
+        <form>
+          <input type="email" placeholder="Ingresa tu Email" required />
+          <button type="submit">Suscribirme</button>
+        </form>
+        <div class="social-icons">
+          <a href="#"><img src="facebook.svg" alt="Facebook"></a>
+          <a href="#"><img src="instagram.svg" alt="Instagram"></a>
+          <a href="#"><img src="pinterest.svg" alt="Pinterest"></a>
+          <a href="#"><img src="tiktok.svg" alt="TikTok"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-brand">BINAH</div>
+  </footer>
+  <script>
+    // Muestra/Oculta el mega menú
+    const productosLink = document.querySelector('.nav-links a:first-child');
+    const megaMenu = document.getElementById('megaMenu');
+  
+    productosLink.addEventListener('mouseover', () => {
+      megaMenu.style.display = 'flex';
+    });
+  
+    megaMenu.addEventListener('mouseleave', () => {
+      megaMenu.style.display = 'none';
+    });
+  
+    // Cambia la imagen según el hover
+    function cambiarImagen(imagenSrc) {
+      document.getElementById('menuImagen').src = imagenSrc;
+    }
+  </script>
 </body>
 </html>
