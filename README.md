@@ -1,5 +1,5 @@
 
-Este proyecto es una sitio web, ya yo habia disenado e; sitio en framer, y fui adaptandola la entrega de desarollo, para el curso de Front End Js.
+Este proyecto es una sitio web, Estoy disenando este sitio en framer, y fui adaptandolo a la entrega de desarollo, para el curso de Front End Js.
 
 Link al sitio publicado
 https://oslalejandro.github.io/Front-End-Js/
