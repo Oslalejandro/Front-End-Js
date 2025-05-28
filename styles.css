@@ -308,7 +308,7 @@
     padding-top: 12px;
   }
 
-  .inspiran-text {
+  .inspiran {
     font-size: 36px;
     margin-top: 32px;
   }
@@ -397,7 +397,7 @@ SIGUIENTE SECCION
   z-index: 2;
 }
 
-/* Efecto hover */
+
 .img-container:hover .overlay {
   opacity: 1;
 }
