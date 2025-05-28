@@ -58,8 +58,7 @@
   .nav-icons {
     display: flex;
     gap: 24px;
-    margin-left: 525px; /* separación íconos */
-  }
+  margin-left: auto;}
   
   .icon {
     width: 20px;
@@ -73,6 +72,17 @@
     color: #888;
   }
   
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none; 
+    }
+  
+    .icon {
+      width: 24px;
+      height: 24px;
+    }
+  }
 
 
   .mega-menu {
@@ -118,14 +128,11 @@
     object-fit: cover;
     max-width: 800px;
   }
-
-
-
-body {
-    font-family: 'Inter', sans-serif;
-  }
   
-  
+
+
+
+
 
  .section-container {
   font-family: 'Inter', sans-serif;
@@ -138,7 +145,6 @@ body {
   background: url(img/image.png) no-repeat center/cover;
   padding: 40px 140px;
   box-sizing: border-box;
-  font-family: 'Helvetica Neue', sans-serif;
 }
 
 .fixed-content {
@@ -151,7 +157,7 @@ body {
 
 }
 
-.fixed-content p {
+.fixed-content h1 {
   font-size: 20px;
   color: #ffffff;
   margin-bottom: 16px;
@@ -186,8 +192,8 @@ body {
 }
 
 .card {
-  width: 242px;
-  height: 300px;
+  width: 300px;
+  height: 180px;
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(6px);
   overflow: hidden;
@@ -199,45 +205,52 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  transition: background-color 0.3s ease;
+  transition: all 0.4s ease;
+}
+
+
+.card:hover {
+  height: 300px;
 }
 
 .card .card-front {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
   font-size: 14px;
   font-weight: 600;
-  color: #ffffff;
-  text-align:left;
+
   z-index: 2;
 }
 
+/* flecha → */
+.card-icon {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .card-icon {
+  transform: rotate(45deg);
+}
+
+/* Texto que aparece */
 .card .card-back {
   position: absolute;
-  bottom: 100px;
+  bottom: 60px;
   left: 0;
   right: 0;
   opacity: 0;
   transform: translateY(20px);
   transition: all 0.3s ease;
-  padding: 16px;
+  padding: 0 16px;
   font-size: 12px;
   color: #fff;
-  text-align:center;
+  text-align: center;
   line-height: 1.4;
   pointer-events: none;
 }
 
-.inspiran{
-  position: absolute;
-  text-align: center;
-  margin-right: 500px;
-  
-}
-
-.inspiran-text{
-  font-style:inherit;
-  font-size: 80px;
-  color: #ffffff;
-}
 
 .card:hover .card-back {
   opacity: 1;
@@ -245,6 +258,7 @@ body {
   pointer-events: all;
 }
 
+/* Colores a las tarjetas*/
 .card1:hover {
   background-color: #3E5C76;
 }
@@ -255,6 +269,49 @@ body {
 
 .card3:hover {
   background-color: #A8BCA0;
+}
+
+.inspiran{
+  position: absolute;
+  text-align: left;
+  font-style:inherit;
+  font-size: 80px;
+  color: #ffffff;
+  
+}
+
+@media (max-width: 768px) {
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 80px;
+    margin-bottom: 60px;
+  }
+
+  .card {
+    width: 90%;
+    height: auto;
+    padding: 24px;
+  }
+
+  .card .card-front {
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .card .card-back {
+    font-size: 14px;
+    text-align: center;
+    padding-top: 12px;
+  }
+
+  .inspiran-text {
+    font-size: 36px;
+    margin-top: 32px;
+  }
 }
 
 
@@ -299,8 +356,6 @@ SIGUIENTE SECCION
   text-align: left;
 }
 
-
-
 .etiqueta {
   display: flex;
   justify-content: space-between;
@@ -312,10 +367,6 @@ SIGUIENTE SECCION
   color: #333;
 }
 
-
-
-
-/* Contenedor de imagen con posición relativa */
 .img-container {
   position: relative;
   overflow: hidden;
@@ -331,7 +382,6 @@ SIGUIENTE SECCION
   transition: transform 0.3s ease;
 }
 
-/* Capa de overlay con blur y fondo semitransparente */
 .overlay {
   position: absolute;
   top: 0;
@@ -365,12 +415,28 @@ SIGUIENTE SECCION
   text-align: right;
 }
 
-/* Al hacer hover, movemos la palabra al centro horizontalmente */
 .producto:hover .categoria {
   transform: translateX(-100%);
   margin-left: 50%;
 }
  
+@media (max-width: 1024px) {
+  .grid-productos {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 20px;
+  }
+
+  .producto {
+    width: 100%;
+    max-width: 360px;
+  }
+
+  .texto-categorias p {
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
 
 
 .banner {
@@ -472,26 +538,90 @@ SIGUIENTE SECCION
   color: #000;
 }
 
+/* tablets */
+@media (max-width: 1024px) {
+  .promociones-section {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 60px 20px;
+  }
 
+  .promo-card {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 40px;
+  }
+
+  .promo-image-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .promo-image-container img {
+    height: auto;
+  }
+}
+
+/* mobile */
+@media (max-width: 600px) {
+  .promociones-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 10px;
+    gap: 20px;
+  }
+
+  .promo-card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .promo-text h3 {
+    font-size: 12px;
+  }
+
+  .promo-text p {
+    font-size: 13px;
+  }
+}
 
 
 .banner2 {
   width: 100%;
   height: 90px;
-  background-color: rgb(255, 255, 255);
-}
-
-.carrusel2 {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
-.banner-texto2 {
-  text-align: center;
-  margin-bottom: 20PX;
-  font-size: 90px;
-  color: rgb(0, 0, 0);
+.carrusel2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.banner-texto2 {
+  font-size: 90px;
+  color: #000;
+  text-align: center;
+  margin: 0;
+  padding: 0 20px;
+}
+
+
+@media (max-width: 768px) {
+  .banner-texto2 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-texto2 {
+    font-size: 36px;
+  }
+}
 
 
 
@@ -561,7 +691,46 @@ margin-bottom: 50px;
   object-fit: cover;
 }
 
+@media (max-width: 1024px) {
+  .room-grid {
+    flex-direction: column;
+    width: 100%;
+    padding: 0 20px;
+  }
 
+  .left-column,
+  .right-column {
+    width: 100%;
+    gap: 20px;
+  }
+
+  .text-block {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    padding-right: 0;
+  }
+
+  .img-horizontal,
+  .img-vertical {
+    width: 100%;
+    height: auto;
+  }
+
+  .room-inspiration {
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-block p {
+    font-size: 16px;
+  }
+
+  .cta-button2 {
+    width: 100%;
+    text-align: center;
+  }
+}
 
 
 .shop-instagram {
@@ -640,10 +809,68 @@ color: #000000;
   transform: rotate(45deg);
 }
 
+@media (max-width: 1200px) {
+  .image-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .insta-card {
+    width: 100%;
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .insta-card {
+    height: 250px;
+  }
+
+  .content-wrapper h2 {
+    font-size: 36px;
+  }
+
+  .content-wrapper p {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+
+  .icon-hover span {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .image-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .insta-card {
+    height: 220px;
+  }
+
+  .content-wrapper h2 {
+    font-size: 28px;
+  }
+
+  .content-wrapper p {
+    font-size: 14px;
+  }
+
+  .icon-hover {
+    bottom: 12px;
+    right: 12px;
+    padding: 4px;
+  }
+}
 
 
-
-/* Reviews Section */
 .review-carousel-container {
   position: relative;
   width: 100%;
@@ -808,16 +1035,55 @@ height: 40px;}
   user-select: none;
   pointer-events: none;
 }
-
-
-
-/* Responsive */
 @media (max-width: 1024px) {
-  .grid-productos {
-    grid-template-columns: repeat(2, 1fr);
+  .footer-column {
+    flex: 1 1 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 32px;
   }
 
-  .texto-categorias {
-    margin: 50px 0;
+  .footer-column {
+    flex: 1 1 100%;
+  }
+
+  .footer-brand {
+    font-size: 80px;
+    left: 10px;
+    bottom: 10px;
+    color: #111;
+  }
+
+  .footer-column input[type="email"] {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 40px 20px;
+  }
+
+  .footer-column h4 {
+    font-size: 12px;
+  }
+
+  .footer-column p,
+  .footer-column a,
+  .footer-column li {
+    font-size: 13px;
+  }
+
+  .footer-brand {
+    display: none; /* lo escondemos si molesta mucho */
+  }
+
+  .social-icons img {
+    width: 18px;
+    height: 18px;
   }
 }
