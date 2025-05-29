@@ -9,4 +9,4 @@ Contenido del proyecto
 - Estructura moderna y responsiva
 - Imágenes optimizadas y efectos hover
 
-Alejandro Linares  
+Alejandro Linares.
