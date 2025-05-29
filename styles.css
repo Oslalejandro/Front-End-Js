@@ -308,7 +308,7 @@
     padding-top: 12px;
   }
 
-  .inspiran {
+  .inspiran-text {
     font-size: 36px;
     margin-top: 32px;
   }
@@ -783,23 +783,6 @@ margin-bottom: 50px;
   transition: filter 0.3s ease;
 }
 
-.icon-hover {
-  background: rgba(255, 255, 255, 0.05);
-backdrop-filter: blur(6px);
-color: #000000;
-  position: absolute;
-  bottom: 24px;
-  right: 24px;
-  padding: 6px;
-  transition: transform 0.3s ease;
-  border-color: #000;
-}
-
-.icon-hover span {
-  display: inline-block;
-  font-size: 20px;
-  transition: transform 0.3s ease;
-}
 
 .insta-card:hover img {
   filter: blur(2px);
@@ -838,10 +821,6 @@ color: #000000;
   .content-wrapper p {
     font-size: 16px;
     margin-bottom: 40px;
-  }
-
-  .icon-hover span {
-    font-size: 16px;
   }
 }
 
