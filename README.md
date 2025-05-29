@@ -5,7 +5,7 @@ Link al sitio publicado
 https://oslalejandro.github.io/Front-End-Js/
 
 Contenido del proyecto
-- HTML y CSS puros
+- HTML y CSS
 - Estructura moderna y responsiva
 - Imágenes optimizadas y efectos hover
 
