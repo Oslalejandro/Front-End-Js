@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BinahDeco</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<script src="script.js"></script>
+
+<body>
+  <header class="navbar">
+    <div class="logo">BINAH</div>
+    <nav class="nav-links">
+      <a href="#">PRODUCTOS</a>
+      <a href="#">ESPACIOS INSPIRADORES</a>
+      <a href="#">E-GIFT CARD</a>
+      <a href="#" class="sale">SALE</a>
+    </nav>
+    <div class="mega-menu" id="megaMenu">
+      <ul class="menu-categorias">
+        <li onmouseover="cambiarImagen('img1.jpg')">Cocina</li>
+        <li onmouseover="cambiarImagen('img2.jpg')">Living</li>
+        <li onmouseover="cambiarImagen('img3.jpg')">Dormitorio</li>
+        <li onmouseover="cambiarImagen('img4.jpg')">Baño</li>
+        <li onmouseover="cambiarImagen('img5.jpg')">Escritorio</li>
+        <li onmouseover="cambiarImagen('img6.jpg')">Exterior</li>
+        <li onmouseover="cambiarImagen('img7.jpg')">Deco</li>
+        <li onmouseover="cambiarImagen('img8.jpg')">Textiles</li>
+      </ul>
+      <div class="menu-imagen">
+        <img src="img/productos/cocina.png" alt="Preview" id="menuImagen">
+      </div>
+    </div>
+    <div class="nav-icons">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 104.5 4.5a7.5 7.5 0 0012.15 12.15z" />
+      </svg>
+
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.5 20.25a8.25 8.25 0 1115 0v.75H4.5v-.75z" />
+      </svg>
+
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 8.25c0-3.375-2.625-6-6-6-1.875 0-3.563 1.125-4.5 2.625C10.313 3.375 8.625 2.25 6.75 2.25c-3.375 0-6 2.625-6 6 0 7.125 10.5 12.75 10.5 12.75S21.75 15.375 21.75 8.25z" />
+      </svg>
+  
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.5l.813 4.065M6.75 14.25h10.5l4.5-9H5.31m1.44 9L7.5 19.5M16.5 19.5l.75-5.25m-6.75 5.25a.75.75 0 100-1.5.75.75 0 000 1.5zM15 19.5a.75.75 0 100-1.5.75.75 0 000 1.5z" />
+      </svg>
+    </div>
+  </header>
+
+<section class="section-container">
+  <div class="fixed-content">
+    <h1 class="hero-title">Descubrí nuevas formas de decorar tu hogar y aprovechá nuestras promociones exclusivas.</h1>
+    <button class="cta-button">Descubrir tendencias</button>
+  </div>
+
+  <div class="cards-container">
+    <div class="card card1">
+      <div class="card-front">
+        <span class="card-title">Solicitar asesoramiento</span>
+        <span class="card-icon">→</span>
+      </div>
+      <div class="card-back">
+        Te ayudamos a crear el espacio perfecto.  
+        ¡Asesoramiento personalizado para tu hogar!
+      </div>
+    </div>
+
+    <div class="card card2">
+      <div class="card-front">
+        <span class="card-title">Ver ideas</span>
+        <span class="card-icon">→</span>
+      </div>
+      <div class="card-back">
+        Inspiración para cada rincón.  
+        Pequeños espacios, cocinas, livings y más...
+      </div>
+    </div>
+
+    <div class="card card3">
+      <div class="card-front">
+        <span class="card-title">Ver promociones</span>
+        <span class="card-icon">→</span>
+      </div>
+      <div class="card-back">
+        Hasta 50% OFF en muebles y deco  
+        para renovar tu casa sin gastar de más.
+      </div>
+    </div>
+  </div>
+
+  <div class="inspiran">
+    <div>Inspira. Conecta.</div>
+  </div>
+</section>
+    
+
+   <section class="productos">
+        <div class="texto-categorias">
+          <p>
+            Explora nuestras categorías de decoración, pensados para cada rincón de tu hogar.  
+            Funcionalidad, diseño y calidad en un solo lugar.
+          </p>
+        </div>
+      <div class="grid-productos" id="grid-productos"></div>
+        <!-- <div class="producto">
+          <div class="img-container">
+            <img src="img/cocina.webp" alt="01 - Cocina">
+            <div class="overlay"></div>
+          </div>
+          <div class="etiqueta">
+              <div class="numero">01.</div>
+              <span class="categoria">COCINA</span>
+          </div>
+        </div>
+
+        <div class="producto">
+          <div class="img-container">
+            <img src="img/BINAH_128.jpg.webp" alt="02 - Mesa">
+            <div class="overlay"></div>
+          </div>
+          <div class="etiqueta">
+            <div class="numero">02.</div>
+            <span class="categoria">MESA</span>
+          </div>
+        </div>
+
+        <div class="producto">
+          <div class="img-container">
+            <img src="img/cafe.webp" alt="03 - Café y Té">
+            <div class="overlay"></div>
+          </div>
+          <div class="etiqueta">
+            <div class="numero">03.</div>
+            <span class="categoria">CAFÉ Y TÉ</span>
+          </div>
+        </div>
+
+        <div class="producto">
+          <div class="img-container">
+            <img src="img/Imagen.jpg" alt="04 - Baño">
+            <div class="overlay"></div>
+          </div>
+          <div class="etiqueta">
+            <div class="numero">04.</div>
+            <span class="categoria">BAÑO</span>
+          </div>
+        </div>
+
+        <div class="producto">
+          <div class="img-container">
+            <img src="img/deco.webp" alt="05 - Decoracion">
+            <div class="overlay"></div>
+          </div>
+          <div class="etiqueta">
+            <div class="numero">05.</div>
+            <span class="categoria">DECORACION</span>
+          </div>
+        </div>
+
+        <div class="producto">
+          <div class="img-container">
+            <img src="img/asado.webp" alt="06 - ASADO & VINO">
+            <div class="overlay"></div>
+          </div>
+          <div class="etiqueta">
+            <div class="numero">06.</div>
+            <span class="categoria">ASADO & VINO</span>
+          </div>
+        </div>
+
+        <div class="producto">
+          <div class="img-container">
+            <img src="img/BINAH16244.jpg.webp" alt="07 - Café y Té">
+            <div class="overlay"></div>
+          </div>
+          <div class="etiqueta">
+            <div class="numero">07.</div>
+            <span class="categoria">AROMAS</span>
+          </div>
+        </div>
+
+        <div class="producto">
+          <div class="img-container">
+            <img src="img/004241.jpg.webp" alt="08 - Baño">
+            <div class="overlay"></div>
+          </div>
+          <div class="etiqueta">
+            <div class="numero">08.</div>
+            <span class="categoria">COLLECTION</span>
+          </div>
+        </div> -->
+    </section>
+    
+    <section class="banner">
+      <div class="carrusel">
+        <div class="banner-texto">6 cuotas sin interés</div>
+        <div class="banner-texto">SUMMER SALE hasta 50% OFF</div>
+        <div class="banner-texto">10% off con transferencia</div>
+        <div class="banner-texto">6 cuotas sin interés</div>
+        <div class="banner-texto">SUMMER SALE hasta 50% OFF</div>
+        <div class="banner-texto">10% off con transferencia</div>
+      </div>
+    </section>
+
+    <section class="promociones-section">
+      <div class="promo-card">
+        <div class="promo-image-container">
+          <img src="img/01promociones.png" alt="Botellas" />
+
+        </div>
+        <div class="promo-text">
+          <h3>BOTELLAS</h3>
+          <p>¡Disfruta del verano con las botellas más prácticas para mantenerte hidratado!</p>
+        </div>
+      </div>
+    
+      <div class="promo-card">
+        <div class="promo-image-container">
+          <img src="img/BINAH_002_f612bd32-daa3-4259-9622-390a1054abc7.jpg" alt="Summer Sale" />
+        </div>
+        <div class="promo-text">
+          <h3>SUMMER SALE HASTA 50% OFF</h3>
+          <p>Haz clic, descubre y no te pierdas los ítems Binah que seleccionamos para que compres con hasta un 50% OFF.</p>
+        </div>
+      </div>
+    
+      <div class="promo-card">
+        <div class="promo-image-container">
+          <img src="img/BINAH00020USOWEB_82a49e91-ad88-4d69-8187-4b93c7827365.jpg.webp" alt="Vasos Whisky" />
+        </div>
+        <div class="promo-text">
+          <h3>VASOS WHISKY X4</h3>
+          <p>Disfruta del mejor whisky en los mejores vasos de vidrio, perfectos para compartir o regalar.</p>
+        </div>
+      </div>
+    </section>
+    <section class="banner2">
+      <div class="carrusel2">
+        <div class="banner-texto2">ESPACIOS INSPIRADORES</div>
+      </div>
+    </section>
+
+    <section class="room-inspiration">
+      <div class="room-grid">
+        <div class="left-column">
+          <div class="text-block">
+            <p>Descubre espacios que inspiran. Encuentra ideas y soluciones para cada rincón de tu hogar, desde detalles pequeños hasta grandes renovaciones. ¡Motivate y eleva tu estilo al máximo!</p>
+            <button class="cta-button2">Explorar Ideas</button>
+          </div>
+          <img src="img/Inspiracion/01.png" alt="Espacio Living" class="img-horizontal" />
+          <img src="img/Inspiracion/04.png" alt="Cocina" class="img-horizontal" />
+        </div>
+        <div class="right-column">
+          <img src="img/Inspiracion/03.png" alt="Consola Deco" class="img-vertical" />
+          <img src="img/Inspiracion/02.png" alt="Espacio Verde" class="img-vertical" />
+        </div>
+      </div>
+    </section>
+
+    <section class="shop-instagram">
+      <div class="content-wrapper">
+        <h2>SHOP OUR INSTAGRAM</h2>
+        <p>
+          Mirá cómo nuestros clientes transforman sus espacios con Binah Deco. <br>
+          Descubre los productos en acción y llévalos a casa.
+        </p>
+    
+        <div class="image-grid">
+          <div class="insta-card">
+            <img src="img/Instagram/Variant 1.png" alt="Producto 1" />
+          </div>
+          <div class="insta-card"><img src="img/Instagram/02.png" alt="Producto 2"/></div>
+          <div class="insta-card"><img src="img/Instagram/03.png" alt="Producto 3"/></div>
+          <div class="insta-card"><img src="img/Instagram/04.png" alt="Producto 4"/></div>
+          <div class="insta-card"><img src="img/Instagram/05.png" alt="Producto 5"/></div>
+          <div class="insta-card"><img src="img/Instagram/06.png" alt="Producto 6"/></div>
+          <div class="insta-card"><img src="img/Instagram/07.png" alt="Producto 7"/></div>
+          <div class="insta-card"><img src="img/Instagram/08.png" alt="Producto 8"/></div>
+        </div>
+    
+        <div class="google-reviews">
+          <div class="review-header">
+            <img src="img/Captura de pantalla 2025-05-18 a la(s) 6.08.12 p. m..png" alt="Google Logo" />
+            <div>
+              <strong>binahdeco.com.ar</strong><br />
+              <span>4.7 ★★★★★</span> <small>224 reseñas</small>
+            </div>
+          </div>
+        
+          CARRUSEL
+          <div class="review-carousel-container">
+            <button class="carousel-btn left" onclick="scrollReviews(-1)">←</button>
+            
+            <div class="review-carousel" id="review-carousel">
+              <div class="review-card">
+                <p><strong>★★★★★</strong><br/>Buena atención, el asesoramiento me ayudó a elegir el mejor para mi espacio. ¡Gracias!</p>
+                <small>Autora de la reseña - hace 1 año</small>
+              </div>
+              <div class="review-card">
+                <p><strong>★★★★★</strong><br/>Me equivoqué en la elección, pero el equipo me asesoró y resolvieron todo rápido.</p>
+                <small>Autora de la reseña - hace 1 año</small>
+              </div>
+              <div class="review-card">
+                <p><strong>★★★★★</strong><br/>Excelente atención y gran variedad de productos exclusivos y cálidos.</p>
+                <small>Autora de la reseña - hace 8 meses</small>
+              </div>
+              <div class="review-card">
+                <p><strong>★★★★★</strong><br/>Inspiración, calidad y atención. Me ayudaron a elegir justo lo que necesitaba.</p>
+                <small>Autora de la reseña - hace 2 años</small>
+              </div>
+            </div>
+          <button class="cta-button2">Deja tu comentario</button>
+        </div>
+    </section>
+  </div>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h4>Contacto</h4>
+        <p>Nos apasiona la vida en casa</p>
+        <p>Te inspiramos a crear espacios cálidos y hacer de tu hogar tu lugar favorito.</p>
+        <a href="mailto:info@binahdeco.com.ar">info@binahdeco.com.ar</a>
+      </div>
+  
+      <div class="footer-column">
+        <h4>Nosotros</h4>
+        <ul>
+          <li><a href="#">Quiénes somos</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="#">Preguntas Frecuentes</a></li>
+          <li><a href="#">Términos y condiciones</a></li>
+          <li><a href="#">Política de devolución y reembolso</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-column">
+        <h4>Cuenta</h4>
+        <ul>
+          <li><a href="#">Mi cuenta</a></li>
+          <li><a href="#">Mis pedidos</a></li>
+          <li><a href="#">Mis direcciones</a></li>
+          <li><a href="#">Libro de Quejas Online</a></li>
+          <li><a href="#">Políticas de Privacidad</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-column">
+        <section class="newsletter-section">
+          <form id="newsletter-form">
+            <input type="text" id="name" placeholder="Tu nombre" />
+            <input type="email" id="email" placeholder="Tu correo electrónico" />
+            <button type="submit">Suscribirme</button>
+            <p id="form-message"></p>
+          </form>
+        </section>
+
+        <div class="social-icons">
+          <a href="#"><img src="facebook.svg" alt="Facebook"></a>
+          <a href="#"><img src="instagram.svg" alt="Instagram"></a>
+          <a href="#"><img src="pinterest.svg" alt="Pinterest"></a>
+          <a href="#"><img src="tiktok.svg" alt="TikTok"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-brand">BINAH</div>
+  </footer>
+</body>
+</html>
