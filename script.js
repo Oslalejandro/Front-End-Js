@@ -50,6 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const card = document.createElement('div');
         card.classList.add('producto');
       
+        
         card.innerHTML = `
           <div class="img-container">
             <img src="${producto.imagen}" alt="${producto.nombre}">
