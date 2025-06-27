@@ -445,12 +445,11 @@ SIGUIENTE SECCION
 }
 
 .precio {
-  font-size: 16px;
+  font-size: 14px;
   color: #444;
   text-align: center;
   margin-bottom: 10px;
 }
-
 
 .btn-agregar {
   background-color: #000;
