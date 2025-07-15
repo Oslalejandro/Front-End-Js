@@ -1245,7 +1245,7 @@ height: 40px;}
   }
 
   .footer-brand {
-    display: none; /* lo escondemos si molesta mucho */
+    display: none; 
   }
 
   .social-icons img {
