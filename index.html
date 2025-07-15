@@ -46,9 +46,12 @@
         <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 8.25c0-3.375-2.625-6-6-6-1.875 0-3.563 1.125-4.5 2.625C10.313 3.375 8.625 2.25 6.75 2.25c-3.375 0-6 2.625-6 6 0 7.125 10.5 12.75 10.5 12.75S21.75 15.375 21.75 8.25z" />
       </svg>
   
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.5l.813 4.065M6.75 14.25h10.5l4.5-9H5.31m1.44 9L7.5 19.5M16.5 19.5l.75-5.25m-6.75 5.25a.75.75 0 100-1.5.75.75 0 000 1.5zM15 19.5a.75.75 0 100-1.5.75.75 0 000 1.5z" />
-      </svg>
+      <div class="carrito-icono">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.5l.813 4.065M6.75 14.25h10.5l4.5-9H5.31m1.44 9L7.5 19.5M16.5 19.5l.75-5.25m-6.75 5.25a.75.75 0 100-1.5.75.75 0 000 1.5zM15 19.5a.75.75 0 100-1.5.75.75 0 000 1.5z" />
+        </svg>
+        <span id="contador-carrito">0</span>
+      </div>
     </div>
   </header>
 
@@ -120,6 +123,7 @@
       </div>
     </section>
 
+    
     <section class="promociones-section">
       <div class="promo-card">
         <div class="promo-image-container">
@@ -160,18 +164,36 @@
 
     <section class="room-inspiration">
       <div class="room-grid">
+        
         <div class="left-column">
           <div class="text-block">
             <p>Descubre espacios que inspiran. Encuentra ideas y soluciones para cada rincón de tu hogar, desde detalles pequeños hasta grandes renovaciones. ¡Motivate y eleva tu estilo al máximo!</p>
             <button class="cta-button2">Explorar Ideas</button>
           </div>
-          <img src="img/Inspiracion/01.png" alt="Espacio Living" class="img-horizontal" />
-          <img src="img/Inspiracion/04.png" alt="Cocina" class="img-horizontal" />
+    
+          <div class="img-container">
+            <img src="img/Inspiracion/01.png" alt="Espacio Living" class="img-horizontal" />
+            <div class="mensaje-secreto"></div>
+          </div>
+    
+          <div class="img-container">
+            <img src="img/Inspiracion/04.png" alt="Cocina" class="img-horizontal" />
+            <div class="mensaje-secreto"></div>
+          </div>
         </div>
+    
         <div class="right-column">
-          <img src="img/Inspiracion/03.png" alt="Consola Deco" class="img-vertical" />
-          <img src="img/Inspiracion/02.png" alt="Espacio Verde" class="img-vertical" />
+          <div class="img-container">
+            <img src="img/Inspiracion/03.png" alt="Consola Deco" class="img-vertical" />
+            <div class="mensaje-secreto"></div>
+          </div>
+    
+          <div class="img-container">
+            <img src="img/Inspiracion/02.png" alt="Espacio Verde" class="img-vertical" />
+            <div class="mensaje-secreto"></div>
+          </div>
         </div>
+    
       </div>
     </section>
 
