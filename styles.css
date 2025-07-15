@@ -148,8 +148,8 @@
     }
   }
   
-  @media (max-width: 300px) {
-    .vaciar-carrito {
+  @media (max-width: 768px) {
+    .btn-vaciar {
       display: none;
     }
   }
