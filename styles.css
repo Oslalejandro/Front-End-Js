@@ -142,6 +142,10 @@
     .menu-toggle {
       display: block;
     }
+
+    .vaciar-carrito {
+      display: none;
+    }
   }
   
 
