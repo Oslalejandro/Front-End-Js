@@ -150,7 +150,7 @@
   
   @media (max-width: 768px) {
     .btn-vaciar {
-      display: none;
+      display: none !important;
     }
   }
 
