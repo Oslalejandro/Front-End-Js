@@ -148,6 +148,11 @@
     }
   }
   
+  @media (max-width: 300px) {
+    .vaciar-carrito {
+      display: none;
+    }
+  }
 
   .carrito-icono {
     position: relative;
