@@ -92,6 +92,18 @@ document.addEventListener("DOMContentLoaded", function () {
       contador.textContent = total;
     }
   }
+  // Función para vaciar el carrito
+const btnVaciar = document.getElementById("vaciar-carrito");
+if (btnVaciar) {
+  btnVaciar.addEventListener("click", () => {
+    if (confirm("¿Estás seguro de que querés vaciar el carrito?")) {
+      carrito.length = 0; // Vacía el array
+      localStorage.removeItem("carrito"); // Borra el storage
+      actualizarContadorCarrito(); // Refresca el contador
+      alert("Carrito vaciado correctamente.");
+    }
+  });
+}
 
   // Delegación de eventos
   document.addEventListener("click", function (e) {
